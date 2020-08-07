@@ -150,7 +150,7 @@
                                                                 <div class="profile-user-info profile-user-info-striped" style="font-size: 14pt">
                                                                     <div class="profile-info-row">
                                                                         <div class="profile-info-value">
-                                                                            <span class="editable editable-click editable-unsaved" id="username" style="display: inline; background-color: rgba(0, 0, 0, 0);"><strong>MIGUEL DE SOUSA CAMPOS</strong></span>
+                                                                            <span class="editable editable-click editable-unsaved" id="username" style="display: inline; background-color: rgba(0, 0, 0, 0);"><strong>MIGUEL DE SOUSA CAMPOS DA SILVA</strong></span>
                                                                         </div>
                                                                     </div>
 
