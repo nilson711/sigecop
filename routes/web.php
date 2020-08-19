@@ -71,6 +71,11 @@ Route::get('/logout', function(){
 });
 
 
+//============================= ROTAS DO USUÁRIO EXTERNO ========================//
+Route::get('/cadMatricula', function (){
+    return view('cadastros.cadMatriculaAluno');
+});
+
 
 // ============================== ROTAS DA INTRANET ==============================//
 
@@ -84,6 +89,10 @@ Route::get('/intranet/inicio', function(){
 
 Route::post('/intranet/inicio', function(){
     return view('intranet.intranetProtocolo');
+});
+
+Route::get('/table', function(){
+    return view('cadastros.tables');
 });
 
 

@@ -359,8 +359,8 @@
 </body>
 
 
-<script src="/vendor/mask/jquery.mask.js"></script>
-<script src="/js/personal.js"></script>
+{{--<script src="/vendor/mask/jquery.mask.js"></script>--}}
+{{--<script src="/js/personal.js"></script>--}}
 
 <script>
     $(document).ready(function(){
@@ -596,7 +596,6 @@
         data = date.split(' ').reverse();
         return data[1].split('-').reverse().join('/');
     }
-
 
 </script>
 
