@@ -22,6 +22,18 @@ Route::post('/cop/inicial', function(){
     return view('inicialCop');
 });
 
+Route::get('/cop/cadModalidade', function(){
+    return view('cadastros.cadModalidade');
+});
+
+Route::get('/cop/cadProfessor', function(){
+    return view('cadastros.cadProfessor');
+});
+
+Route::get('/cop/cadTurma', function(){
+    return view('cadastros.cadTurma');
+});
+
 Route::get('/cop/inicial', function(){
     return view('inicialCop');
 });

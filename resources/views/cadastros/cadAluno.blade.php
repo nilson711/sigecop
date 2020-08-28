@@ -1879,7 +1879,16 @@
 
                                                                         </tbody>
                                                                     </table>
+
+                                                                    <div class="hidden-sm hidden-xs btn-group" title="Adicionar Nova Modalidade">
+                                                                        <button class="btn btn-xs btn-success">
+                                                                            <i class="ace-icon fa fa-plus bigger-120"></i>
+                                                                        </button>
+
+                                                                    </div>
+
                                                                 </div><!-- /.span -->
+
                                                             </div>
                                                         </div>
                                                     </div>

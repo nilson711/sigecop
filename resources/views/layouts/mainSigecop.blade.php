@@ -180,7 +180,15 @@
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            Listas
+                            Relatório de Modalidades
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            Relatório de Professores
                         </a>
 
                         <b class="arrow"></b>
@@ -217,7 +225,7 @@
 
                 <ul class="submenu">
                     <li class="">
-                        <a href="#">
+                        <a href="/cop/cadModalidade">
                             <i class="menu-icon fa fa-caret-right"></i>
                             Modalidades
                         </a>
@@ -226,7 +234,7 @@
                     </li>
 
                     <li class="">
-                        <a href="#">
+                        <a href="/cop/cadProfessor">
                             <i class="menu-icon fa fa-caret-right"></i>
                             Professores
                         </a>
@@ -234,7 +242,7 @@
                         <b class="arrow"></b>
                     </li>
                     <li class="">
-                        <a href="#">
+                        <a href="/cop/cadTurma">
                             <i class="menu-icon fa fa-caret-right"></i>
                             Turmas
                         </a>
@@ -359,8 +367,8 @@
 </body>
 
 
-{{--<script src="/vendor/mask/jquery.mask.js"></script>--}}
-{{--<script src="/js/personal.js"></script>--}}
+<script src="/mask/jquery.mask.js"></script>
+<script src="/js/personal.js"></script>
 
 <script>
     $(document).ready(function(){
