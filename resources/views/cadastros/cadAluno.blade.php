@@ -50,6 +50,176 @@
     </div>
     <!-- MODAL FIM-->
 
+    <!-- Modal MATRÍCULAS-->
+    <div class="modal fade" id="modalAddMatrícula" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="staticBackdropLabel">Matricular em Modalidade</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form style="width: 90%; margin-top: 10px" class="offset-2" method="post" action="/cop/inicial">
+                        {{-- CSRF--}}
+                        {{csrf_field()}}
+                        <div class="col-md-5">
+                            <label for="addModalidadeAluno">Modalidade</label>
+                            <select class="form-control" id="addModalidadeAluno" name="addModalidadeAluno">
+                                <option disabled selected>Selecione</option>
+                                <option value="1">AFO</option>
+                                <option value="2">ATLETISMO</option>
+                                <option value="3">BASQUETE</option>
+                                <option value="4">DM-I</option>
+                                <option value="5">DM-II</option>
+                                <option value="6">FUTEBOL SOCIETY</option>
+                                <option value="7">FUTSAL</option>
+                                <option value="8">GIN. LOCALIZADA</option>
+                                <option value="9">HANDEBOL</option>
+                                <option value="10">HIDROGINÁSTICA</option>
+                                <option value="11">JUDÔ</option>
+                            </select>
+                        </div>
+                        <div class="col-md-7">
+                            <label for="addTurmaAluno">Turma</label>
+                            <select class="form-control" id="addTurmaAluno" name="addTurmaAluno">
+                                <option disabled selected>Selecione</option>
+                                <option value="1">01 - HIDROGINÁSTICA 1 - Masculino - 12 a 14 anos - 14:00-15:00 - Ter-Qui-Sab - JOÃO RIBEIRO - 3 vagas</option>
+                                <option value="2">02 - ATLETISMO - Masculino - 10 a 12 anos - 10:00-11:00 - Seg-Qua - CARLOS DA SILVA - 10 vagas</option>
+                                <option value="3">03 - FUTEBOL - Masculino - 08 a 10 anos - 08:00-09:00 - Seg-Sex - JOSÉ GOMES - 04 vagas</option>
+                            </select>
+                        </div>
+                    </form>
+                    <br>
+                    <hr>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    {{--                    <button type="button" class="btn btn-primary">Sim</button>--}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL FIM-->
+
+    <!-- Modal DOCUMENTOS-->
+    <div class="modal fade" id="modalAddDocumentos" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="staticBackdropLabel">Adicionar Documentos</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form style="width: 90%; margin-top: 10px" class="offset-2" method="post" action="/cop/inicial">
+                        {{-- CSRF--}}
+                        {{csrf_field()}}
+                        <div class="col-md-12">
+                            <label for="addModalidadeAluno">Adicionar Documento</label>
+                            <div class="col-xs-12">
+                                <label class="ace-file-input"><input type="file" id="inputDocAluno" name="inputDocAluno"><span class="ace-file-container" data-title="Escolha"><span class="ace-file-name" data-title="Selecione o Arquivo ..."><i class=" ace-icon fa fa-upload"></i></span></span><a class="remove" href="#"><i class=" ace-icon fa fa-times"></i></a></label>
+                            </div>
+                        </div>
+
+                    </form>
+                    <br>
+                    <hr>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    {{--                    <button type="button" class="btn btn-primary">Sim</button>--}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL FIM-->
+
+    <!-- Modal RESPONSÁVEL-->
+    <div class="modal fade" id="modalAddResponsável" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="staticBackdropLabel">Adicionar Responsável</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form style="width: 90%; margin-top: 10px" class="offset-2" method="post" action="/cop/inicial">
+                        {{-- CSRF--}}
+                        {{csrf_field()}}
+                        <div class="col-md-12 form-group">
+                            <label for="nomeResponsavel">Nome</label>
+                            <input type="text" class="form-control" id="nomeResponsavel" name="nomeResponsavel" placeholder="Nome do Responsável">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <label for="addParentesco">Parentesco</label>
+                                <select class="form-control" id="addParentesco" name="addParentesco">
+                                    <option disabled selected>Selecione</option>
+                                    <option value="1">Pai</option>
+                                    <option value="2">Mãe</option>
+                                    <option value="3">Tio(a)</option>
+                                    <option value="4">Primo(a)</option>
+                                    <option value="5">Irmão(ã)</option>
+                                    <option value="6">Avô/Avó</option>
+                                    <option value="7">Neto(a)</option>
+                                    <option value="8">Filho(a)</option>
+                                    <option value="9">Enteado(a)</option>
+                                    <option value="10">Sobrinho(a)</option>
+                                    <option value="11">Sogro(a)</option>
+                                    <option value="12">Cunhado(a)</option>
+                                    <option value="13">Padrasto</option>
+                                    <option value="14">Madrasta</option>
+                                    <option value="15">Vizinho(a)</option>
+                                    <option value="16">Amigo(a)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-1">
+                                <label class="pos-rel">Resp
+                                    <input type="checkbox" class="ace" id="respLegal" name="respLegal">
+                                    <span class="lbl"></span>
+                                </label>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="telResponsavel">Tel Resp</label>
+                                <input type="text" class="form-control" id="telResponsavel" name="telResponsavel">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="situacaoParentesco">Situação</label>
+                                <select class="form-control" id="situacaoParentesco" name="situacaoParentesco">
+                                    <option disabled selected>Selecione</option>
+                                    <option value="1">Autorizado</option>
+                                    <option value="2">Proibido</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <br>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    {{--                    <button type="button" class="btn btn-primary">Sim</button>--}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL FIM-->
+
 	<body class="no-skin">
 
 		<div class="main-container ace-save-state" id="main-container">
@@ -122,15 +292,9 @@
 													</a>
 												</li>
 
-												<li>
-													<a data-toggle="tab" href="#pictures">
-														<i class="pink ace-icon fa fa-picture-o bigger-120"></i>
-														Matrículas
-													</a>
-												</li>
                                                 <li>
-                                                    <a data-toggle="tab" href="#pictures">
-                                                        <i class="pink ace-icon fa fa-picture-o bigger-120"></i>
+                                                    <a data-toggle="tab" href="#documentos">
+                                                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
                                                         Documentos
                                                     </a>
                                                 </li>
@@ -141,13 +305,13 @@
 													<div class="row">
                                                         <div class="col-xs-12 col-sm-3 center">
                                                             <div>
-												<span class="profile-picture">
-													<img id="avatar" class="editable img-responsive" alt="Alex's Avatar" src="/assets/images/avatars/miguel.jpg" />
-												</span>
+                                                                <span class="profile-picture">
+                                                                    <img id="avatar" class="editable img-responsive" alt="Alex's Avatar" src="/assets/images/avatars/miguel.jpg" />
+                                                                </span>
 
                                                                 <div class="space-4"></div>
 
-                                                                <div class="profile-user-info profile-user-info-striped" style="font-size: 14pt">
+                                                                <div class="profile-user-info profile-user-info-striped"  style="font-size: 14pt">
                                                                     <div class="profile-info-row">
                                                                         <div class="profile-info-value">
                                                                             <span class="editable editable-click editable-unsaved" id="username" style="display: inline; background-color: rgba(0, 0, 0, 0);"><strong>MIGUEL DE SOUSA CAMPOS DA SILVA</strong></span>
@@ -162,12 +326,12 @@
 
                                                                 </div>
 
-                                                                <div class="width-80 label label-info label-xlg arrowed-in arrowed-in-right">
+                                                                <div class="width-80 label label-success label-xlg arrowed-in arrowed-in-right" > {{-- label de indicação de ativo e inativo (label-success) ---}}
                                                                     <div class="inline position-relative">
                                                                         <a href="#" class="user-title-label dropdown-toggle" data-toggle="dropdown">
-                                                                            <i class="ace-icon fa fa-circle light-green"></i>
+{{--                                                                            <i class="ace-icon fa fa-circle light-green"></i>--}}
                                                                             &nbsp;
-                                                                            <span class="white">Ativo</span>
+                                                                            <span class="white"><strong>Ativo</strong></span>
                                                                         </a>
 
                                                                         <ul class="align-left dropdown-menu dropdown-caret dropdown-lighter">
@@ -175,9 +339,8 @@
 
                                                                             <li>
                                                                                 <a href="#">
-                                                                                    <i class="ace-icon fa fa-circle green"></i>
-                                                                                    &nbsp;
-                                                                                    <span class="green">Ativo</span>
+                                                                                    <i class="ace-icon fa fa-circle light-green"></i>
+                                                                                    <span class="green"> Ativo</span>
                                                                                 </a>
                                                                             </li>
 
@@ -206,32 +369,26 @@
                                                                 <div class="profile-contact-links align-left" style="padding-left: 25px">
                                                                     <div class="row">
                                                                         <input type="checkbox" aria-label="Checkbox for following text input">
-                                                                        <a href="#modalDetalhesDeficiencia" data-toggle="modal" class="btn btn-link">
-                                                                            <i class="ace-icon fa fa-wheelchair bigger-120 blue"></i>
-                                                                            PCD
+                                                                        <label>&nbsp;<i class="ace-icon fa fa-wheelchair bigger-120 blue"></i> PCD</label>
+                                                                        <a href="#modalDetalhesDeficiencia" data-toggle="modal" class="btn btn-link" style="font-size: 8pt">
+                                                                            Detalhes
                                                                         </a>
                                                                     </div>
                                                                     <div class="row">
                                                                         <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                        <label> &nbsp;<i class="ace-icon fa fa-thumbs-up bigger-120 blue"></i> Termo Compromisso</label>
                                                                         <a href="#" class="btn btn-link">
-                                                                            <i class="ace-icon fa fa-thumbs-up bigger-120 blue"></i>
-                                                                            Termo Compromisso
+
                                                                         </a>
 
                                                                     </div>
                                                                     <div class="row">
                                                                         <input type="checkbox" aria-label="Checkbox for following text input">
-                                                                        <a href="#" class="btn btn-link" title="Autoriza o uso de imagem.">
-                                                                            <i class="ace-icon fa fa-camera bigger-120 blue"></i>
-                                                                            Uso de Imagem
-                                                                        </a>
+                                                                        <label title="Autoriza o uso de imagem.">&nbsp;<i class="ace-icon fa fa-camera bigger-120 blue"></i> Uso de Imagem</label>
                                                                     </div>
                                                                     <div class="row">
                                                                         <input type="checkbox" aria-label="Checkbox for following text input">
-                                                                        <a href="#" class="btn btn-link" title="Autoriza o uso de Atividade Física.">
-                                                                            <i class="ace-icon fa fa-soccer-ball-o bigger-120 blue"></i>
-                                                                            Praticar Atividade Física
-                                                                        </a>
+                                                                        <label title="Autoriza o uso de Atividade Física.">&nbsp;<i class="ace-icon fa fa-soccer-ball-o bigger-120 blue"></i> Praticar Atividade Física</label>
                                                                     </div>
 
                                                                 </div>
@@ -261,7 +418,7 @@
                                                             <div class="hr hr12 dotted"></div>
                                                             <div class="profile-contact-info">
                                                                 <div class="profile-contact-links align-left">
-                                                                    <a href="#" class="btn btn-link">
+                                                                    <a href="\cop_files\carteirinha.pdf" class="btn btn-link">
                                                                         {{--														<i class="ace-icon fa fa- bigger-120 green"></i>--}}
                                                                         <i class="ace-icon fa fa-id-badge bigger-140 green"></i>
                                                                         Fazer Carteirinha
@@ -272,7 +429,7 @@
                                                                         Enviar email
                                                                     </a><br>
 
-                                                                    <a href="#" class="btn btn-link">
+                                                                    <a href="\cop_files\ficha_matricula.pdf" class="btn btn-link">
                                                                         <i class="ace-icon fa fa-print bigger-140 green"></i>
                                                                         Imprimir Ficha
                                                                     </a><br>
@@ -685,122 +842,7 @@
 
 													<div class="space-20"></div>
 
-													<div class="row">
-														<div class="col-xs-12 col-sm-6">
-															<div class="widget-box transparent">
-																<div class="widget-header widget-header-small">
-																	<h4 class="widget-title smaller">
-																		<i class="ace-icon fa fa-check-square-o bigger-110"></i>
-																		Little About Me
-																	</h4>
-																</div>
 
-																<div class="widget-body">
-																	<div class="widget-main">
-																		<p>
-																			My job is mostly lorem ipsuming and dolor sit ameting as long as consectetur adipiscing elit.
-																		</p>
-																		<p>
-																			Sometimes quisque commodo massa gets in the way and sed ipsum porttitor facilisis.
-																		</p>
-																		<p>
-																			The best thing about my job is that vestibulum id ligula porta felis euismod and nullam quis risus eget urna mollis ornare.
-																		</p>
-																		<p>
-																			Thanks for visiting my profile.
-																		</p>
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-xs-12 col-sm-6">
-															<div class="widget-box transparent">
-																<div class="widget-header widget-header-small header-color-blue2">
-																	<h4 class="widget-title smaller">
-																		<i class="ace-icon fa fa-lightbulb-o bigger-120"></i>
-																		My Skills
-																	</h4>
-																</div>
-
-																<div class="widget-body">
-																	<div class="widget-main padding-16">
-																		<div class="clearfix">
-																			<div class="grid3 center">
-																				<div class="easy-pie-chart percentage" data-percent="45" data-color="#CA5952">
-																					<span class="percent">45</span>%
-																				</div>
-
-																				<div class="space-2"></div>
-																				Graphic Design
-																			</div>
-
-																			<div class="grid3 center">
-																				<div class="center easy-pie-chart percentage" data-percent="90" data-color="#59A84B">
-																					<span class="percent">90</span>%
-																				</div>
-
-																				<div class="space-2"></div>
-																				HTML5 & CSS3
-																			</div>
-
-																			<div class="grid3 center">
-																				<div class="center easy-pie-chart percentage" data-percent="80" data-color="#9585BF">
-																					<span class="percent">80</span>%
-																				</div>
-
-																				<div class="space-2"></div>
-																				Javascript/jQuery
-																			</div>
-																		</div>
-
-																		<div class="hr hr-16"></div>
-
-																		<div class="profile-skills">
-																			<div class="progress">
-																				<div class="progress-bar" style="width:80%">
-																					<span class="pull-left">HTML5 & CSS3</span>
-																					<span class="pull-right">80%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-success" style="width:72%">
-																					<span class="pull-left">Javascript & jQuery</span>
-
-																					<span class="pull-right">72%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-purple" style="width:70%">
-																					<span class="pull-left">PHP & MySQL</span>
-
-																					<span class="pull-right">70%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-warning" style="width:50%">
-																					<span class="pull-left">Wordpress</span>
-
-																					<span class="pull-right">50%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-danger" style="width:38%">
-																					<span class="pull-left">Photoshop</span>
-
-																					<span class="pull-right">38%</span>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
 												</div><!-- /#home -->
 
 												<div id="info_adicionais" class="tab-pane">
@@ -1081,25 +1123,25 @@
                                                                                                     <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
                                                                                                         <li>
                                                                                                             <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																			</span>
+                                                                                                                <span class="blue">
+                                                                                                                    <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                                </span>
                                                                                                             </a>
                                                                                                         </li>
 
                                                                                                         <li>
                                                                                                             <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																			</span>
+                                                                                                                <span class="green">
+                                                                                                                    <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                                </span>
                                                                                                             </a>
                                                                                                         </li>
 
                                                                                                         <li>
                                                                                                             <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																			</span>
+                                                                                                                <span class="red">
+                                                                                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                                </span>
                                                                                                             </a>
                                                                                                         </li>
                                                                                                     </ul>
@@ -1266,25 +1308,25 @@
                                                                                                 <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
                                                                                                     <li>
                                                                                                         <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																			</span>
+                                                                                                            <span class="blue">
+                                                                                                                <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                            </span>
                                                                                                         </a>
                                                                                                     </li>
 
                                                                                                     <li>
                                                                                                         <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																			</span>
+                                                                                                            <span class="green">
+                                                                                                                <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                            </span>
                                                                                                         </a>
                                                                                                     </li>
 
                                                                                                     <li>
                                                                                                         <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																			</span>
+                                                                                                            <span class="red">
+                                                                                                                <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                            </span>
                                                                                                         </a>
                                                                                                     </li>
                                                                                                 </ul>
@@ -1451,25 +1493,25 @@
                                                                                                 <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
                                                                                                     <li>
                                                                                                         <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																			</span>
+                                                                                                            <span class="blue">
+                                                                                                                <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                            </span>
                                                                                                         </a>
                                                                                                     </li>
 
                                                                                                     <li>
                                                                                                         <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																			</span>
+                                                                                                            <span class="green">
+                                                                                                                <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                            </span>
                                                                                                         </a>
                                                                                                     </li>
 
                                                                                                     <li>
                                                                                                         <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																			</span>
+                                                                                                            <span class="red">
+                                                                                                                <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                            </span>
                                                                                                         </a>
                                                                                                     </li>
                                                                                                 </ul>
@@ -1636,25 +1678,25 @@
                                                                                                 <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
                                                                                                     <li>
                                                                                                         <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																			</span>
+                                                                                                            <span class="blue">
+                                                                                                                <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                            </span>
                                                                                                         </a>
                                                                                                     </li>
 
                                                                                                     <li>
                                                                                                         <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																			</span>
+                                                                                                            <span class="green">
+                                                                                                                <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                            </span>
                                                                                                         </a>
                                                                                                     </li>
 
                                                                                                     <li>
                                                                                                         <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																			</span>
+                                                                                                            <span class="red">
+                                                                                                                <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                            </span>
                                                                                                         </a>
                                                                                                     </li>
                                                                                                 </ul>
@@ -1771,6 +1813,9 @@
 
                                                                                     </tbody>
                                                                                 </table>
+                                                                                    <div class="hidden-sm hidden-xs btn-group" title="Adicionar Novo Professor">
+                                                                                        <button type="button-primary" class="btn btn-primary btn-sm no-border" data-toggle="modal" data-target="#modalAddResponsável"><i class="ace-icon fa fa-plus bigger-120"></i>Novo Responsável</button>
+                                                                                    </div>
                                                                             </div><!-- /.span -->
                                                                         </div>
                                                                     </div>
@@ -1850,25 +1895,25 @@
                                                                                         <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
                                                                                             <li>
                                                                                                 <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																			</span>
+                                                                                                    <span class="blue">
+                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                    </span>
                                                                                                 </a>
                                                                                             </li>
 
                                                                                             <li>
                                                                                                 <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																			</span>
+                                                                                                    <span class="green">
+                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                    </span>
                                                                                                 </a>
                                                                                             </li>
 
                                                                                             <li>
                                                                                                 <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																			</span>
+                                                                                                    <span class="red">
+                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                    </span>
                                                                                                 </a>
                                                                                             </li>
                                                                                         </ul>
@@ -1880,11 +1925,8 @@
                                                                         </tbody>
                                                                     </table>
 
-                                                                    <div class="hidden-sm hidden-xs btn-group" title="Adicionar Nova Modalidade">
-                                                                        <button class="btn btn-xs btn-success">
-                                                                            <i class="ace-icon fa fa-plus bigger-120"></i>
-                                                                        </button>
-
+                                                                    <div class="hidden-sm hidden-xs btn-group" title="Adicionar Novo Professor">
+                                                                        <button type="button-primary" class="btn btn-primary btn-sm no-border" data-toggle="modal" data-target="#modalAddMatrícula"><i class="ace-icon fa fa-plus bigger-120"></i>Nova Matrícula</button>
                                                                     </div>
 
                                                                 </div><!-- /.span -->
@@ -1896,11 +1938,183 @@
 
                                                 </div><!-- /.col -->
 
-														<div class="col-sm-6">
+                                                <div id="documentos" class="tab-pane">
+
+                                                    <div class="col-sm-12">
+
+                                                        <div style="padding: 15px;">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <table id="simple-table" class="table  table-bordered table-hover">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th>Tipo Doc</th>
+                                                                            <th>Status</th>
+                                                                            <th>Arquivo</th>
+                                                                            <th></th>
+
+                                                                        </tr>
+                                                                        </thead>
+
+                                                                        <tbody>
+
+                                                                        {{--Linha Tabela Responsável--}}
+                                                                        <tr>
+                                                                            <td>RG ALUNO</td>
+                                                                            <td>ANEXADO</td>
+                                                                            <td>
+                                                                                <a href="\cop_files\rg_aluno.pdf" target="_blank" title="Clique para abrir o documento">
+                                                                                    <button class="btn btn-app btn-light btn-xs">
+                                                                                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                                                                    </button>
+                                                                                </a>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <div class="hidden-sm hidden-xs btn-group">
+
+                                                                                    <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modalAddDocumentos">
+                                                                                        <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                                                                    </button>
+
+                                                                                    <button class="btn btn-xs btn-danger">
+                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                    </button>
+
+                                                                                </div>
+
+                                                                        <tr>
+                                                                            <td>CPF ALUNO</td>
+                                                                            <td>ANEXADO</td>
+                                                                            <td>
+                                                                                <a href="\cop_files\1_4550_8.pdf" target="_blank" title="Clique para abrir o documento">
+                                                                                    <button class="btn btn-app btn-light btn-xs">
+                                                                                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                                                                    </button>
+                                                                                </a>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <div class="hidden-sm hidden-xs btn-group">
+
+                                                                                    <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modalAddDocumentos">
+                                                                                        <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                                                                    </button>
+
+                                                                                    <button class="btn btn-xs btn-danger">
+                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                    </button>
+
+                                                                                </div>
+
+                                                                                <div class="hidden-md hidden-lg">
+                                                                                    <div class="inline pos-rel">
+                                                                                            <button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                                                                                <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+                                                                                            </button>
+
+                                                                                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                                                                <li>
+                                                                                                    <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
+                                                                                                        <span class="blue">
+                                                                                                            <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                        </span>
+                                                                                                    </a>
+                                                                                                </li>
+
+                                                                                                <li>
+                                                                                                    <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
+                                                                                                        <span class="green">
+                                                                                                            <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                        </span>
+                                                                                                    </a>
+                                                                                                </li>
+
+                                                                                                <li>
+                                                                                                    <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
+                                                                                                        <span class="red">
+                                                                                                            <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                        </span>
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>COMPROVANTE DE RESIDÊNCIA</td>
+                                                                            <td style="color: red">PENDENTE</td>
+                                                                            <td>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <div class="hidden-sm hidden-xs btn-group">
+
+                                                                                    <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modalAddDocumentos">
+                                                                                        <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                                                                    </button>
+
+                                                                                    <button class="btn btn-xs btn-danger">
+                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                    </button>
+
+                                                                                </div>
+
+                                                                                <div class="hidden-md hidden-lg">
+                                                                                    <div class="inline pos-rel">
+                                                                                        <button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                                                                            <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+                                                                                        </button>
+
+                                                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                                                            <li>
+                                                                                                <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
+                                                                                        <span class="blue">
+                                                                                            <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                        </span>
+                                                                                                </a>
+                                                                                            </li>
+
+                                                                                            <li>
+                                                                                                <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
+                                                                                        <span class="green">
+                                                                                            <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                        </span>
+                                                                                                </a>
+                                                                                            </li>
+
+                                                                                            <li>
+                                                                                                <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
+                                                                                        <span class="red">
+                                                                                            <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                        </span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        </tbody>
+                                                                    </table>
+
+                                                                    <div class="hidden-sm hidden-xs btn-group col-xs-2" title="Adicionar Novo Documento">
+                                                                        <button type="button-primary" class="btn btn-primary btn-sm no-border" data-toggle="modal" data-target="#modalAddDocumentos"><i class="ace-icon fa fa-plus bigger-120"></i>Novo Documento</button>
+                                                                    </div>
 
 
-														</div><!-- /.col -->
-													</div><!-- /.row -->
+                                                                </div><!-- /.span -->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div><!-- /.col -->
+
+                                            </div><!-- /.row -->
 
 													<div class="space-12"></div>
 

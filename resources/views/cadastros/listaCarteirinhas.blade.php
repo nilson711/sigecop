@@ -12,7 +12,7 @@
             <li>
                 <a href="#">Alunos</a>
             </li>
-            <li class="active">Lista</li>
+            <li class="active">Carteirinhas</li>
             {{--            <li class="breadcrumb-item active" aria-current="page">Intranet</li>--}}
         </ol>
         <hr>
@@ -46,30 +46,15 @@
 
 
     <div class="col-xs-12">
-        <h3>LISTA DE ALUNOS</h3>
+        <h3>CARTEIRINHAS PARA IMPRIMIR</h3>
     <!--------------------------------- MOSTRA LISTA DE ALUNOS--------------------------------------------->
 
     <table class="table table-bordered table-hover">
-        <div class="row">
-            <div class="col-xs-2">
-                <div class="hidden-sm hidden-xs btn-group" title="Adicionar Novo Aluno">
-                    <a href="/cop/cadAluno">
-                        <button type="button-primary" class="btn btn-primary btn-sm no-border" data-toggle="modal" data-target="#modalAddTurma">
-                            <i class="ace-icon fa fa-plus bigger-120"></i>Novo Aluno
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xs-3">
-                <div id="dynamic-table_filter" class="dataTables_filter">
-                    <input type="search" class="form-control input-sm" placeholder="buscar pelo nome">
-                </div>
-            </div>
-        </div>
-        <br>
+
         <thead>
         <tr>
-            <th class="col-sm-1" scope="col">Cód</th>
+            <th class="col-sm-1" scope="col"></th>
+            <th class="col-sm-1" scope="col">Id</th>
             <th scope="col">Nome</th>
             <th class="col-sm-1" scope="col"></th>
 
@@ -77,23 +62,39 @@
         </thead>
         <tbody>
         <tr>
+            <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input" checked></th>
             <th scope="row">11</th>
-            <td>Miguel de Sousa Campos</td>
+            <td>MIGUEL DE SOUSA CAMPOS</td>
             <td><div class="hidden-sm hidden-xs action-buttons"><a class="green" href="/cop/cadAluno"><i class="ace-icon fa fa-pencil bigger-130"></i></a></div></td>
         </tr>
         <tr>
+            <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input" checked></th>
             <th scope="row">18</th>
-            <td>Sarah de Sousa Campos</td>
+            <td>CARLOS ALBERTO SILVA CARDOSO</td>
             <td><div class="hidden-sm hidden-xs action-buttons"><a class="green" href="/cop/cadAluno"><i class="ace-icon fa fa-pencil bigger-130"></i></a></div></td>
         </tr>
         <tr>
-            <th scope="row">34</th>
-            <td>Rodrigo da Silva Nascimento</td>
+            <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input" checked></th>
+            <th scope="row">85</th>
+            <td>SABRINA FERREIRA FONSECA NUNES
+            </td>
             <td><div class="hidden-sm hidden-xs action-buttons"><a class="green" href="/cop/cadAluno"><i class="ace-icon fa fa-pencil bigger-130"></i></a></div></td>
         </tr>
-
+        <tr>
+            <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input" checked></th>
+            <th scope="row">34</th>
+            <td>VALERIA NOGUEIRA BEZERRA FERREIRA
+            </td>
+            <td><div class="hidden-sm hidden-xs action-buttons"><a class="green" href="/cop/cadAluno"><i class="ace-icon fa fa-pencil bigger-130"></i></a></div></td>
+        </tr>
         </tbody>
     </table>
+        <div>
+            <a href="\cop_files\select_carteirinhas.pdf"><button class="btn btn-app btn-light btn-xs">
+                <i class="ace-icon fa fa-print bigger-160"></i>
+                Imprimir
+            </button></a>
+        </div>
     </div>
 
 @endsection

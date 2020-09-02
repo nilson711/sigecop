@@ -176,6 +176,78 @@
     </div>
     <!-- MODAL FIM-->
 
+    <!-- Modal Alunos das Turmas -->
+    <div class="modal fade" id="modalAlunosDaTurma" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="staticBackdropLabel">Alunos da Turma 01</h3>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <table class="table table-bordered table-hover">
+{{--                        <div class="row">--}}
+{{--                            <div class="col-xs-6">--}}
+{{--                                <div class="dataTables_length" id="dynamic-table_length">--}}
+{{--                                    <label>Mostar <select name="dynamic-table_length" aria-controls="dynamic-table" class="form-control input-sm">--}}
+{{--                                            <option value="10">10</option>--}}
+{{--                                            <option value="25">25</option>--}}
+{{--                                            <option value="50">50</option>--}}
+{{--                                            <option value="100">100</option>--}}
+{{--                                        </select> registros</label>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-xs-6">--}}
+{{--                                <div id="dynamic-table_filter" class="dataTables_filter">--}}
+{{--                                    <label>Procurar:<input type="search" class="form-control input-sm" placeholder="buscar pelo nome" aria-controls="dynamic-table"></label>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+                        <thead>
+                        <tr>
+                            <th class="col-sm-1" scope="col">Cód</th>
+                            <th scope="col">Nome</th>
+                            <th class="col-sm-1" scope="col"></th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Miguel de Sousa Campos</td>
+                            <td><div class="hidden-sm hidden-xs action-buttons"><a class="green" href="/cop/cadAluno"><i class="ace-icon fa fa-pencil bigger-130"></i></a></div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Sarah de Sousa Campos</td>
+                            <td><div class="hidden-sm hidden-xs action-buttons"><a class="green" href="/cop/cadAluno"><i class="ace-icon fa fa-pencil bigger-130"></i></a></div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">34</th>
+                            <td>Rodrigo da Silva Nascimento</td>
+                            <td><div class="hidden-sm hidden-xs action-buttons"><a class="green" href="/cop/cadAluno"><i class="ace-icon fa fa-pencil bigger-130"></i></a></div></td>
+                        </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    {{--                    <button type="button" class="btn btn-primary">Sim</button>--}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Alunos das Turmas  FIM-->
+
 
     <div class="col-sm-12">
         <div style="padding: 15px;">
@@ -217,7 +289,7 @@
                             <td>
                                 <div class="hidden-sm hidden-xs btn-group"><button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modalAddTurma" title="Editar"><i class="ace-icon fa fa-pencil bigger-120"></i></button></div>
                                 <a href="/cop_files/pauta.pdf" class="btn btn-xs btn-success hidden-sm hidden-xs" title="Gerador de Pauta"><i class="fa fa-check-square-o" aria-hidden="true"></i></a>
-                                <div class="hidden-sm hidden-xs btn-group"><button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#" title="Alunos da Turma"><i class="fa fa-users" aria-hidden="true"></i></button></div>
+                                <div class="hidden-sm hidden-xs btn-group"><button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#modalAlunosDaTurma" title="Alunos da Turma"><i class="fa fa-users" aria-hidden="true"></i></button></div>
 
 
                             </td>

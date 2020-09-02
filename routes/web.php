@@ -30,8 +30,16 @@ Route::get('/cop/cadProfessor', function(){
     return view('cadastros.cadProfessor');
 });
 
+Route::get('/cop/cadUsers', function(){
+    return view('cadastros.cadUsuarios');
+});
+
 Route::get('/cop/cadTurma', function(){
     return view('cadastros.cadTurma');
+});
+
+Route::get('/cop/carteirinhas', function(){
+    return view('cadastros.listaCarteirinhas');
 });
 
 Route::get('/cop/inicial', function(){

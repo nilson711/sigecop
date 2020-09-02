@@ -37,11 +37,7 @@
                             <input type="text" class="form-control" id="newModalidade" name="newModalidade" placeholder="Digite o nome da Modalidade" required>
 
                         </div>
-
-
-                        <div style="text-align: center">
-                            <a href="#"><button type="submit" class="btn btn-primary btn-sm" style="width: 60%">Cadastrar</button></a>
-                        </div>
+                        <br>
 
                     </form>
 

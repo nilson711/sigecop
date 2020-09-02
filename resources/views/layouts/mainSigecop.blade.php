@@ -120,8 +120,8 @@
             <img src="/cop_files/ico-logo-olimpic.svg" alt="some text" width=100% align="center" >
             <li class="" style="left: 15px">
                 {{--						<a href="#">--}}
-                <i class="menu-icon fa fa-arrow-down"></i>
-                <span class="menu-text"> MENU INTRANETddd</span>
+{{--                <i class="menu-icon fa fa-arrow-down"></i>--}}
+{{--                <span class="menu-text"> MENU INTRANET</span>--}}
                 {{--						</a>--}}
 
                 <b class="arrow"></b>
@@ -156,13 +156,36 @@
                         <b class="arrow"></b>
                     </li>
                     <li class="">
-                        <a href="#">
+                        <a href="/cop/carteirinhas">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            Carteirinha
+                            Carteirinhas
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+                </ul>
+            </li>
+
+            <li class="">
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-users"></i>
+                    <span class="menu-text">Turma</span>
+
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
+
+                <b class="arrow"></b>
+
+                <ul class="submenu">
+                    <li class="">
+                        <a href="/cop/cadTurma">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            Turmas
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
                 </ul>
             </li>
 
@@ -215,7 +238,7 @@
 
             <li class="">
                 <a href="#" class="dropdown-toggle">
-                    <i class="menu-icon fa fa-gears"></i>
+                    <i class="menu-icon fa fa-gear"></i>
                     <span class="menu-text"> Configurar</span>
 
                     <b class="arrow fa fa-angle-down"></b>
@@ -241,15 +264,72 @@
 
                         <b class="arrow"></b>
                     </li>
+
+                </ul>
+            </li>
+            <li class="">
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-user-circle-o"></i>
+                    <span class="menu-text">Usuários</span>
+
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
+
+                <b class="arrow"></b>
+
+                <ul class="submenu">
                     <li class="">
-                        <a href="/cop/cadTurma">
+                        <a href="/cop/cadUsers">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            Turmas
+                            Usuário
                         </a>
 
                         <b class="arrow"></b>
                     </li>
                 </ul>
+            </li>
+
+            <li class="">
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-gears"></i>
+                    <span class="menu-text">Administração</span>
+
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
+
+                <b class="arrow"></b>
+
+                <ul class="submenu">
+                    <li class="">
+                        <a href="/cop/cadUsers">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            Usuários
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+                </ul>
+                <ul class="submenu">
+                    <li class="">
+                        <a href="/cop/cadModalidade">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            Modalidades
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+                </ul>
+                <ul class="submenu">
+                    <li class="">
+                        <a href="#">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            Níveis
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+                </ul>
+
             </li>
 
 
